@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "screenshot-claim-audit"
+version = "0.1.0"
+description = "Offline audit of documented still-image capabilities"
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+
+[project.scripts]
+screenshot-claim-audit = "screenshot_claim_audit:main"
+
+[tool.setuptools.packages.find]
+include = ["screenshot_claim_audit*"]
